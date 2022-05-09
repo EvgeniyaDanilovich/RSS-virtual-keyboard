@@ -1,0 +1,79 @@
+@import "_mixins";
+
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700&subset=cyrillic-ext");
+
+@import "_fonts";
+
+$fontfamily: "PT Sans";
+
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+$minwidth: 320px;
+$mw: 1100;
+$md1: $mw + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+//</ПЕРЕМЕННЫЕ>==================================================
+
+@import "_null";
+
+body {
+	color: #727272;;
+	font-size: 14px;
+	background-color: #efefef;
+}
+
+
+//<ОСНОВНОЙ БЛОК>==============================
+
+.textarea{
+	display: block;
+   height: 180px;
+	width: 865px;
+	margin: 40px auto 20px auto;
+	padding: 20px;
+	box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+	resize: none;
+	border-radius: 5px;
+	background-color: #efefef;
+	color: #727272;
+	// color: #1ca6b3;
+	font-size: 24px; 
+}
+.keyboard {
+	display: block;
+	width: 1050px;
+	margin: 0 auto;
+	text-align: center;
+
+	&__key {
+		display: inline-block;;
+		color: #727272;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+		border: 1px solid rgb(247, 246, 246);
+		border-radius: 5px;
+		height: 46px;
+		padding: 15px 20px;
+		margin: 3px;
+		cursor: pointer;
+		transition: all 0.2s;
+		&.active{
+			transform: scale(0.9);
+			background-color: #1ca6b3;
+			color: #fff;
+			border: 1px solid #1ca6b3;
+		}
+	}
+}
+
+.space{
+	margin: 0px 3px -18px 3px;
+	width: 333px;
+
+}
+
+.text{
+	line-height: 20px;
+	text-align: center;
+	margin: 30px 0px 0px 0px;
+}
