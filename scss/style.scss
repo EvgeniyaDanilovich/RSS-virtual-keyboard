@@ -18,37 +18,11 @@ $md4: 479.98;
 @import "_null";
 
 body {
-	color: #000;
+	color: #727272;;
 	font-size: 14px;
+	background-color: #efefef;
 }
 
-.wrapper {
-	width: 100%;
-	min-height: 100%;
-	overflow: hidden;
-   display: flex;
-	flex-direction: column;
-}
-
-//<ОСНОВНАЯ СЕТКА>
-.container {
-	max-width: $mw + px;
-	margin: 0 auto;
-	@media (max-width: $md1 + px) {
-		max-width: 970px;
-	}
-	@media (max-width: $md2+px) {
-		max-width: 750px;
-	}
-	@media (max-width: $md3+px) {
-		max-width: none;
-		padding: 0 10px;
-	}
-}
-
-@import "_header";
-@import "_footer";
-@import "_pattern";
 
 //<ОСНОВНОЙ БЛОК>==============================
 
@@ -57,18 +31,26 @@ body {
    height: 180px;
 	width: 865px;
 	margin: 40px auto 20px auto;
-	border: 1px solid #000;
+	padding: 20px;
+	box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+	resize: none;
+	border-radius: 5px;
+	background-color: #efefef;
+	color: #727272;
+	// color: #1ca6b3;
+	font-size: 24px; 
 }
 .keyboard {
 	display: block;
-	width: 900px;
+	width: 1050px;
 	margin: 0 auto;
-	border: 1px solid #000;
 	text-align: center;
 
 	&__key {
-		display: inline-block;
-		border: 1px solid #000;
+		display: inline-block;;
+		color: #727272;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+		border: 1px solid rgb(247, 246, 246);
 		border-radius: 5px;
 		height: 46px;
 		padding: 15px 20px;
@@ -77,14 +59,16 @@ body {
 		transition: all 0.2s;
 		&.active{
 			transform: scale(0.9);
-			background-color: rgb(122, 21, 97);
+			background-color: #1ca6b3;
+			color: #fff;
+			border: 1px solid #1ca6b3;
 		}
 	}
 }
 
 .space{
-	margin: 0px 0px -18px 0px;
-	width: 270px;
+	margin: 0px 3px -18px 3px;
+	width: 333px;
 
 }
 
